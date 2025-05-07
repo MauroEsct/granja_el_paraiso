@@ -167,29 +167,27 @@ body {
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    list-style-type: none;
+    justify-content: center;
     padding: 0;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
-.product-grid li {
+.product-grid .card {
+    width: 18rem;
     text-align: center;
 }
 
-.product-grid li img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
+.product-grid .card img {
+    width: 100%;
+    height: auto;
 }
 
-.product-grid li span {
-    display: block;
-    margin-top: 10px;
+.product-grid .card .card-body {
+    padding: 15px;
 }
 
 /* Contenido de contacto.html */
@@ -331,15 +329,13 @@ form .mb-3 {
         max-width: 90%;
     }
     .product-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
         max-width: 90%;
     }
-    .product-grid li img {
-        width: 80%;
-        height: auto;
-    }
-    .product-grid li span {
-        font-size: 13px;
+    .product-grid .card {
+        width: 100%;
+        max-width: 18rem;
     }
 }
 
