@@ -1,367 +1,252 @@
-/* Color del footer y header: #69504e (marron oscuro) */
-/* Color de lista #c8c8c8 (gris claro) */
-
-/* Contenedor global */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Estilo para header */
 header {
-    background-color: #69504e;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #69504e;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+header .brand-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.brand-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
-
-/* Navegación */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
 nav ul li {
-    display: inline-block;
+  display: inline-block;
 }
-
 nav ul li a {
-    color: #c8c8c8;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+  color: #c8c8c8;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-/* Estilo para main */
 main {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-/* Estilo para footer */
 footer {
-    background-color: #69504e;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #69504e;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Margen externo y fuente */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Contenido de index.html */
-.home-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+.contact-content, .product-content, .process-content, .history-content, .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.contact-content h1, .product-content h1, .process-content h1, .history-content h1, .home-content h1 {
+  font-size: 28px;
+  margin: 0;
+}
+.contact-content p, .product-content p, .process-content p, .history-content p, .home-content p {
+  font-size: 16px;
+  max-width: 1000px;
 }
 
 .home-content img {
-    max-width: 300px;
-    height: auto;
+  max-width: 300px;
+  height: auto;
 }
-
 .home-content .cerezas-img {
-    max-width: 600px;
-    width: 100%;
-}
-
-.home-content h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.home-content p {
-    font-size: 16px;
-    max-width: 1000px;
-}
-
-/* Contenido de nuestra_historia.html */
-.history-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.history-content h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.history-content p {
-    font-size: 16px;
-    max-width: 1000px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .history-content img {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-}
-
-/* Contenido de proceso.html */
-.process-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.process-content h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.process-content p {
-    font-size: 16px;
-    max-width: 1000px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .process-content iframe {
-    max-width: 800px;
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-
-/* Contenido de productos.html */
-.product-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.product-content h1 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.product-content p {
-    font-size: 16px;
-    max-width: 1000px;
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
 }
-
 .product-grid .card {
-    width: 18rem;
-    text-align: center;
+  width: 18rem;
+  text-align: center;
 }
-
 .product-grid .card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 .product-grid .card .card-body {
-    padding: 15px;
+  padding: 15px;
 }
 
-/* Contenido de contacto.html */
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+.contact-content h3 {
+  font-size: 28px;
+  margin: 0;
 }
-
-.contact-content h1, .contact-content h3 {
-    font-size: 28px;
-    margin: 0;
-}
-
-.contact-content p {
-    font-size: 16px;
-    max-width: 1000px;
-}
-
 .contact-content iframe {
-    max-width: 600px;
-    width: 100%;
-    height: 450px;
-    border: 0;
+  max-width: 600px;
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 
-/* Estilo para el formulario */
 form {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
-
 form .mb-3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-/* Personalizar componentes de Bootstrap */
 .form-control {
-    background-color: #f8f8f8;
-    border-color: #69504e;
-    width: 100%;
+  background-color: #f8f8f8;
+  border-color: #69504e;
+  width: 100%;
 }
 
 .btn-primary {
-    background-color: #69504e;
-    border-color: #69504e;
+  background-color: #69504e;
+  border-color: #69504e;
 }
-
 .btn-primary:hover {
-    background-color: #4a3632;
-    border-color: #4a3632;
+  background-color: #4a3632;
+  border-color: #4a3632;
 }
 
-/* Responsividad para header y nav */
 @media (max-width: 768px) {
-    header {
-        padding: 8px;
-    }
-    nav ul {
-        gap: 15px;
-        margin: 8px 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav ul li a {
-        font-size: 13px;
-    }
+  header {
+    padding: 8px;
+  }
+  nav ul {
+    gap: 15px;
+    margin: 8px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li a {
+    font-size: 13px;
+  }
+  .home-content {
+    padding: 15px;
+  }
+  .home-content h1 {
+    font-size: 24px;
+  }
+  .home-content p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .home-content img {
+    max-width: 90%;
+  }
+  .home-content .cerezas-img {
+    max-width: 90%;
+  }
+  .history-content {
+    padding: 15px;
+  }
+  .history-content h1 {
+    font-size: 24px;
+  }
+  .history-content p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .history-content img {
+    max-width: 90%;
+  }
+  .process-content {
+    padding: 15px;
+  }
+  .process-content h1 {
+    font-size: 24px;
+  }
+  .process-content p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .process-content iframe {
+    max-width: 90%;
+    height: 300px;
+  }
+  .product-content {
+    padding: 15px;
+  }
+  .product-content h1 {
+    font-size: 24px;
+  }
+  .product-content p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+  .product-grid .card {
+    width: 100%;
+    max-width: 18rem;
+  }
+  .contact-content {
+    padding: 15px;
+  }
+  .contact-content h1, .contact-content h3 {
+    font-size: 24px;
+  }
+  .contact-content p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+  .contact-content iframe {
+    max-width: 90%;
+    height: 300px;
+  }
+  form {
+    width: 90%;
+  }
+  form .form-control {
+    width: 100%;
+  }
+  form button {
+    width: 80%;
+  }
 }
 
-/* Responsividad para index.html */
-@media (max-width: 768px) {
-    .home-content {
-        padding: 15px;
-    }
-    .home-content h1 {
-        font-size: 24px;
-    }
-    .home-content p {
-        font-size: 14px;
-        max-width: 90%;
-    }
-    .home-content img {
-        max-width: 90%;
-    }
-    .home-content .cerezas-img {
-        max-width: 90%;
-    }
-}
-
-/* Responsividad para nuestra_historia.html */
-@media (max-width: 768px) {
-    .history-content {
-        padding: 15px;
-    }
-    .history-content h1 {
-        font-size: 24px;
-    }
-    .history-content p {
-        font-size: 14px;
-        max-width: 90%;
-    }
-    .history-content img {
-        max-width: 90%;
-    }
-}
-
-/* Responsividad para proceso.html */
-@media (max-width: 768px) {
-    .process-content {
-        padding: 15px;
-    }
-    .process-content h1 {
-        font-size: 24px;
-    }
-    .process-content p {
-        font-size: 14px;
-        max-width: 90%;
-    }
-    .process-content iframe {
-        max-width: 90%;
-        height: 300px;
-    }
-}
-
-/* Responsividad para productos.html */
-@media (max-width: 768px) {
-    .product-content {
-        padding: 15px;
-    }
-    .product-content h1 {
-        font-size: 24px;
-    }
-    .product-content p {
-        font-size: 14px;
-        max-width: 90%;
-    }
-    .product-grid {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-    }
-    .product-grid .card {
-        width: 100%;
-        max-width: 18rem;
-    }
-}
-
-/* Responsividad para contacto.html */
-@media (max-width: 768px) {
-    .contact-content {
-        padding: 15px;
-    }
-    .contact-content h1, .contact-content h3 {
-        font-size: 24px;
-    }
-    .contact-content p {
-        font-size: 14px;
-        max-width: 90%;
-    }
-    .contact-content iframe {
-        max-width: 90%;
-        height: 300px;
-    }
-    form {
-        width: 90%;
-    }
-    form .form-control {
-        width: 100%;
-    }
-    form button {
-        width: 80%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
