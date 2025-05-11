@@ -1,1 +1,7 @@
-@use 'base';
+@import 'variables';
+@import 'base';
+@import 'header-footer';
+@import 'nav';
+@import 'index';
+@import 'other-sections';
+@import 'media-queries';

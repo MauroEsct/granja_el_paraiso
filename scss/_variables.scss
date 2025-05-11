@@ -1,0 +1,19 @@
+// Variables
+$color-marron: #69504e;
+$color-gris: #c8c8c8;
+$color-blanco: #ffffff;
+$color-marron-oscuro: #4a3632;
+$max-width-container: 1200px;
+$font-family: Arial, sans-serif;
+$padding-base: 20px;
+$gap-base: 20px;
+
+// Mixin para botones
+@mixin button-style($bg-color) {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    &:hover {
+        background-color: $color-marron-oscuro;
+        border-color: $color-marron-oscuro;
+    }
+}

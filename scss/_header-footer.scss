@@ -1,0 +1,23 @@
+@import 'variables';
+
+// Header
+header {
+    background-color: $color-marron;
+    color: $color-blanco;
+    padding: 10px;
+    text-align: center;
+
+    .brand-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+// Footer
+footer {
+    background-color: $color-marron;
+    color: $color-blanco;
+    padding: 10px;
+    text-align: center;
+}

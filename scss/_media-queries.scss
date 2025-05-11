@@ -1,0 +1,133 @@
+@import 'variables';
+
+// Media Queries
+@media (max-width: 768px) {
+    header {
+        padding: 8px;
+    }
+
+    nav {
+        ul {
+            gap: 15px;
+            margin: 8px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .home-content {
+        padding: 15px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        img {
+            max-width: 90%;
+        }
+
+        .cerezas-img {
+            max-width: 90%;
+        }
+    }
+
+    .history-content {
+        padding: 15px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        img {
+            max-width: 90%;
+        }
+    }
+
+    .process-content {
+        padding: 15px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        iframe {
+            max-width: 90%;
+            height: 300px;
+        }
+    }
+
+    .product-content {
+        padding: 15px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        .product-grid {
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+
+            .card {
+                width: 100%;
+                max-width: 18rem;
+            }
+        }
+    }
+
+    .contact-content {
+        padding: 15px;
+
+        h1, h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 90%;
+        }
+
+        iframe {
+            max-width: 90%;
+            height: 300px;
+        }
+    }
+
+    form {
+        width: 90%;
+
+        .form-control {
+            width: 100%;
+        }
+
+        button {
+            width: 80%;
+        }
+    }
+}

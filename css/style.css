@@ -4,6 +4,11 @@
   padding: 0 20px;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 header {
   background-color: #69504e;
   color: #ffffff;
@@ -14,6 +19,13 @@ header .brand-title {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+}
+
+footer {
+  background-color: #69504e;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul {
@@ -36,22 +48,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #ffffff;
-}
-
-main {
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: #69504e;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 .contact-content, .product-content, .process-content, .history-content, .home-content {
@@ -92,7 +88,7 @@ body {
   border: 0;
 }
 
-.product-grid {
+.product-content .product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -101,15 +97,15 @@ body {
   margin: 0 auto;
   max-width: 800px;
 }
-.product-grid .card {
+.product-content .product-grid .card {
   width: 18rem;
   text-align: center;
 }
-.product-grid .card img {
+.product-content .product-grid .card img {
   width: 100%;
   height: auto;
 }
-.product-grid .card .card-body {
+.product-content .product-grid .card .card-body {
   padding: 15px;
 }
 
@@ -215,12 +211,12 @@ form .mb-3 {
     font-size: 14px;
     max-width: 90%;
   }
-  .product-grid {
+  .product-content .product-grid {
     flex-direction: column;
     align-items: center;
     max-width: 90%;
   }
-  .product-grid .card {
+  .product-content .product-grid .card {
     width: 100%;
     max-width: 18rem;
   }

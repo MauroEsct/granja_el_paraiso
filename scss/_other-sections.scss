@@ -1,0 +1,93 @@
+@import 'variables';
+
+// Nuestra Historia
+.history-content {
+    @extend %content-base;
+
+    img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Proceso
+.process-content {
+    @extend %content-base;
+
+    iframe {
+        max-width: 800px;
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
+}
+
+// Productos
+.product-content {
+    @extend %content-base;
+
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap-base;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+
+        .card {
+            width: 18rem;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+// Contacto
+.contact-content {
+    @extend %content-base;
+
+    h3 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    iframe {
+        max-width: 600px;
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
+}
+
+// Formulario
+form {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+    .mb-3 {
+        margin-bottom: 15px;
+    }
+}
+
+// Bootstrap
+.form-control {
+    background-color: #f8f8f8;
+    border-color: $color-marron;
+    width: 100%;
+}
+
+.btn-primary {
+    @include button-style($color-marron);
+}

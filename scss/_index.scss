@@ -1,0 +1,35 @@
+@import 'variables';
+
+// Contenido compartido
+%content-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-base;
+    padding: $padding-base;
+
+    h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 1000px;
+    }
+}
+
+// Index
+.home-content {
+    @extend %content-base;
+
+    img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .cerezas-img {
+        max-width: 600px;
+        width: 100%;
+    }
+}
