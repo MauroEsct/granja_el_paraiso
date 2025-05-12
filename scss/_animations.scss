@@ -18,3 +18,9 @@ nav ul li a {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
+
+// Indicador activo
+nav ul li a.active {
+    color: $color-blanco;
+    font-weight: bold; // Opcional, para destacar
+}

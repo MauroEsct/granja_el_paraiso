@@ -261,4 +261,9 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+nav ul li a.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
