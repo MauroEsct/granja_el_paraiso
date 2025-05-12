@@ -244,5 +244,21 @@ form .mb-3 {
     width: 80%;
   }
 }
+nav ul li a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.btn-primary {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /*# sourceMappingURL=style.css.map */
